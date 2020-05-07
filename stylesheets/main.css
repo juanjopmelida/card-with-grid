@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/css?family=Fira+Code);
+/* line 1, ../sass/_base.scss */
+:root {
+  box-sizing: border-box;
+  font-family: "Fira Code";
+}
+
+/* line 9, ../sass/_base.scss */
+.card {
+  background-color: whitesmoke;
+  border: 1px solid gray;
+  width: 360px;
+  display: grid;
+  grid-template-rows: 314px;
+  grid-template-areas: "img" "title" "desc" "footer" "button";
+  justify-items: stretch;
+  align-items: stretch;
+}
+/* line 11, ../sass/_mixins.scss */
+.card .item-img {
+  grid-area: "img";
+}
+/* line 15, ../sass/_mixins.scss */
+.card .item-title {
+  grid-area: "title";
+  font-size: 2rem;
+  padding: 1rem .7rem .5rem;
+}
+/* line 21, ../sass/_mixins.scss */
+.card .item-desc {
+  grid-area: "desc";
+  text-align: justify;
+  font-size: smaller;
+  padding: 1rem .7rem;
+}
+/* line 28, ../sass/_mixins.scss */
+.card .item-footer {
+  grid-area: "footer";
+  padding: 1.5rem .7rem .3rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: right;
+}
+/* line 36, ../sass/_mixins.scss */
+.card .card-date {
+  margin-left: .5rem;
+  color: #2bc972;
+}
+/* line 41, ../sass/_mixins.scss */
+.card .item-button {
+  grid-area: "button";
+  padding: 1rem .7rem;
+  justify-self: center;
+}
+/* line 46, ../sass/_mixins.scss */
+.card .item-button .button {
+  font-size: larger;
+  padding: 1rem 7.6rem;
+  background-color: #2bc972;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

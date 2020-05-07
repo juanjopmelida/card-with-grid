@@ -1,0 +1,55 @@
+@mixin card {
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    width: 360px;
+    display: grid;
+    grid-template-rows: 314px ;
+    grid-template-areas: "img" "title" "desc" "footer" "button";
+    justify-items: stretch;
+    align-items: stretch;
+
+    .item-img {
+        grid-area: "img";
+    }
+
+    .item-title {
+        grid-area: "title";
+        font-size: $title-font-size;
+        padding: 1rem .7rem .5rem;
+    }
+
+    .item-desc {
+        grid-area: "desc";
+        text-align: justify;
+        font-size: smaller;
+        padding: 1rem .7rem;
+    }
+
+    .item-footer {
+        grid-area: "footer";
+        padding: 1.5rem .7rem .3rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: right;
+    }
+
+    .card-date {
+        margin-left: .5rem;
+        color: $green;
+    }
+
+    .item-button {
+        grid-area: "button";
+        padding: 1rem .7rem;
+        justify-self: center;
+
+        .button {
+            font-size: larger;
+            padding: 1rem 7.6rem;
+            background-color: $green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
