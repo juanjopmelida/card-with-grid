@@ -3,9 +3,6 @@
     font-family: $card-font;
 }
 
-body {
-}
-
 .card {
     @include card;
 }
